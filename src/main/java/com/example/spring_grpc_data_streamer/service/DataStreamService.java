@@ -16,7 +16,7 @@ public class DataStreamService extends DataStreamerGrpc.DataStreamerImplBase {
 
     @Override
     public void streamData(StreamRequest request, StreamObserver<StreamResponse> responseObserver) {
-        Duration duration = Duration.ofSeconds(10);
+        Duration duration = Duration.ofMinutes(5);
         Instant startTime = Instant.now();
 
         try {
