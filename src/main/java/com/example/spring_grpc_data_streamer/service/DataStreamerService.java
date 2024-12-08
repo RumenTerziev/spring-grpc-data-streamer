@@ -12,7 +12,7 @@ import java.time.Instant;
 
 @Slf4j
 @GrpcService
-public class DataStreamService extends DataStreamerGrpc.DataStreamerImplBase {
+public class DataStreamerService extends DataStreamerGrpc.DataStreamerImplBase {
 
     @Override
     public void streamData(StreamRequest request, StreamObserver<StreamResponse> responseObserver) {
