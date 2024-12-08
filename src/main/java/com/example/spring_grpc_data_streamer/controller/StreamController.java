@@ -37,7 +37,7 @@ public class StreamController {
             StreamObserver<StreamResponse> responseObserver = new StreamObserver<>() {
                 @Override
                 public void onNext(StreamResponse response) {
-                    sink.next(response.getMessage());
+                    sink.next("From flux:" + response.getMessage());
                 }
 
                 @Override
